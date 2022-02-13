@@ -1,0 +1,90 @@
+## testing login 
+
+### test 1 must return 400 sucess
+POST  http://yilkalyenesewimportandexport.com/wp-json/jwt-auth/v1/token HTTP/1.1
+content-type: application/json
+
+{
+    "username":"tikur tech",
+    "password":"tikur12345"
+}
+
+
+### test 2 must retrun 403
+
+
+POST  http://localhost:3009/api/v1/users/login  HTTP/1.1
+content-type: application/json
+
+{
+    "username":"tikur techh",
+    "password":"tikur12345"
+}
+
+
+
+
+### test 3 must retrun 405
+
+
+POST  http://localhost:3001/  HTTP/1.1
+content-type: application/json
+
+{
+    "username":"tikur tech",
+    "password":"tikur12345j"
+}
+
+
+###
+
+POST http://localhost:3010/api/v1/post/add HTTP/1.1
+content-type: application/json
+Authorization:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC95aWxrYWx5ZW5lc2V3aW1wb3J0YW5kZXhwb3J0LmNvbSIsImlhdCI6MTY0NDU5ODExNSwibmJmIjoxNjQ0NTk4MTE1LCJleHAiOjE2NDUyMDI5MTUsImRhdGEiOnsidXNlciI6eyJpZCI6IjEifX19.PloYJQ8SjltKGkRbXDHvQn81MvsTsaGF33585DLZLsY
+
+
+{
+           "title" : "test title",
+            "content" : "test title"
+            
+}
+
+###
+
+POST  http://yilkalyenesewimportandexport.com/wp-json/bdpwr/v1/reset-password HTTP/1.1
+content-type: application/json
+
+{
+ "email": "yonastatekcse1@gmail.com"
+}
+
+####
+POST  http://localhost:3008/api/v1/users/reset-password  HTTP/1.1
+content-type: application/json
+
+{
+    "email":"admin@yilkalyenesewimportandexport.com"
+
+}
+
+####
+POST  http://localhost:3008/api/v1/users/set HTTP/1.1
+content-type: application/json
+
+{
+    "email":"admin@yilkalyenesewimportandexport.com",
+    "password":"IamKing",
+    "code":1234,
+
+}
+
+
+
+####
+POST  http://localhost:3008/api/v1/users/reset-password  HTTP/1.1
+content-type: application/json
+
+{
+    "email":"yonastatekcse1@gmail.com"
+
+}

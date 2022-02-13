@@ -1,0 +1,11 @@
+{
+    "wordpress": {
+        "rest_endpoint" : "http://yilkalyenesewimportandexport.com/wp-json/wp/v2/",
+        "token_auth_url": "http://yilkalyenesewimportandexport.com/wp-json/jwt-auth/v1/token",
+        "post_endpoint":  "http://yilkalyenesewimportandexport.com/wp-json/wp/v2/posts",
+        "reset_password" : "http://yilkalyenesewimportandexport.com/wp-json/bdpwr/v1/reset-password",
+        "set_password" : "http://yilkalyenesewimportandexport.com/wp-json/bdpwr/v1/set-password",
+        "validate_code" : "http://yilkalyenesewimportandexport.com/wp-json/wp-json/bdpwr/v1/validate-code",
+        "token_auth_validate_url" : "http://yilkalyenesewimportandexport.com/wp-json/jwt-auth/v1/token/validate"
+    }
+}
